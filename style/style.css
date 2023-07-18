@@ -149,6 +149,26 @@ li a{
     width: 250px;
     padding-top: 17px;
 }
+/* see more button style  */
+.see-more{
+    display: flex;
+    justify-content: end;
+    color: #E02C6D;
+    gap: 8px;
+    padding-top: 50px;
+}
+.see-more button{
+    color: #E02C6D;
+    background: #FFFFFF;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0;
+    margin: -2px;
+}
+
+
+
 /* features style start  */
 .features{
     display: flex;
@@ -180,16 +200,47 @@ li a{
     font-weight: 700;
     background: #E02C6D;
     border: 0;
-    display: flex;
-    gap: 8px;
+    /* display: flex;
+    gap: 8px; */
 }
-
+/* footer style start  */
+footer{
+    background: #0A0826;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 50px 0px;
+}
+.footer-title{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 3px;
+}
+.footer-copyright{
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    margin:3px;
+}
+.footer-description{
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 3px;
+}
+.social-media{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 3px;
+}
 
 @media screen and (max-width:576px) {
    
     
      nav,
-    .popular-item-content
+    .popular-item-content,
+    .features
     {
         flex-direction: column;
     }
@@ -198,9 +249,6 @@ li a{
     }
     nav ul{
         flex-direction: column;
-    }
-    .banner img{
-        margin-bottom: 14px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -223,7 +271,16 @@ li a{
     }
     .popular-item-box img{
         padding-left: 14px;
-        width: 93%;
+        width: 90%;
+    }
+    .features img{
+        width: 300px;
+        height: 200px;
+    }
+    .features{
+        flex-direction: column-reverse;
+        padding: 30px 15px;
+        text-align: center;
     }
     
     
